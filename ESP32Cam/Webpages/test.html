@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESP32 Web Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body { text-align: center; font-family: Arial; margin-top: 50px; }
+      button { font-size: 24px; padding: 15px 30px; margin: 20px; }
+    </style>
+  </head>
+  <body>
+    <h1>ESP32 CAM Streaming</h1>
+    <button onclick="toggleLED('on')">ON</button>
+    <button onclick="toggleLED('off')">OFF</button>
+    
+    <script>
+      function toggleLED(state) {
+        fetch('/' + state);
+      }
+    </script>
+  </body>
+</html>
