@@ -2,7 +2,7 @@ import cv2
 
 login_username = "a0ms1n"
 login_password = "6767"
-ip = "192.168.1.101"
+ip = "10.4.2.65"
 port = 6767
 
 url = "http://{}:{}@{}:{}/video".format(login_username, login_password, ip, port)
