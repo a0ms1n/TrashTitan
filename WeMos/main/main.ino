@@ -9,7 +9,6 @@ void setup() {
 }
 
 void loop() {
-
   for (int angle = 0; angle <= 180; angle += 5) {
     myServo.write(angle);
     delay(20);
